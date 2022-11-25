@@ -1,5 +1,5 @@
 # Crowdfunding product page fellow student
-## This project belongs to my fellow student, I wrote tests using cypress.
+## This project belongs to my fellow student, I wrote tests using Cypress.
 ### Converting Figma design with HTML / SASS / Vanilla JS. 
 My learning goals were: 
 - Pixel-pretty-close implementation;
