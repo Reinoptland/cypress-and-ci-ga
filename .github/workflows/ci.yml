@@ -10,7 +10,6 @@ jobs:
       - run: npm install
         with:
           node-version: "16"
-    steps:
-      uses: cypress-io/github-action@v4.2.0
-      with:
-        start: npm start
+      - uses: cypress-io/github-action@v4.2.0
+        with:
+          start: npm start
