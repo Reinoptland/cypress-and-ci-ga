@@ -19,7 +19,8 @@
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
     "test:e2e:dev": "npx cypress open",
     "test:e2e:ci": "npx cypress run",
-    "ci": "npm-run-all --parallel start test:e2e:ci"
+    "start-server": "npm start",
+    "ci": "start-server-and-test start-server http://localhost:3000 test:e2e:ci"
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
@@ -32,6 +33,7 @@
     "sass": "^1.49.8"
   },
   "devDependencies": {
-    "cypress": "^10.0.1"
+    "cypress": "^10.0.1",
+    "start-server-and-test": "^1.15.2"
   }
 }
